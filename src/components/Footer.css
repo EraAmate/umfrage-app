@@ -1,0 +1,27 @@
+.footer {
+  bottom: 0;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: #34a854;
+}
+
+.btn {
+  font-size: 25px;
+  color: teal;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 200px;
+  background-color: #f4f4f4;
+}
+
+.btn:hover {
+  padding-right: 20px;
+  transition: 1s;
+}
+.btn:hover:after {
+  content: " >>";
+}
