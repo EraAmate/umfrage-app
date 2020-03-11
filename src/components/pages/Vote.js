@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "../Card";
 
 function Vote() {
   return (
-    <div>
-      Vote <Link to="/result">Result!</Link>
-    </div>
+    <Card>
+      <Link to="/result">Result!</Link>
+    </Card>
   );
 }
 
