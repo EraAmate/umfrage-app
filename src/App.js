@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Add from "./components/pages/Add";
 import Vote from "./components/pages/Vote";
 import Result from "./components/pages/Result";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             </Route>
           </Switch>
         </main>
+        <Footer />
       </Router>
     </>
   );
