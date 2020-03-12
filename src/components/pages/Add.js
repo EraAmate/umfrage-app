@@ -17,16 +17,27 @@ function Add() {
   const [answerTwo, setAnswerTwo] = React.useState("");
   const [answerThree, setAnswerThree] = React.useState("");
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    alert(JSON.stringify(inputsRes));
+
+    const poll = {
+      question: question,
+      answerOne: answerOne,
+      answerTwo: answerTwo,
+      answerThree: answerThree
+    };
+
+    const response = await fetch("http://localhost:4000/polls", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(poll)
+    });
+    const createdNewPoll = await response.json();
+
+    alert(`New poll is created with the id ${createdNewPoll.id}`);
   }
-  const inputsRes = {
-    question: question,
-    answerOne: answerOne,
-    answerTwo: answerTwo,
-    answerThree: answerThree
-  };
 
   return (
     <>
