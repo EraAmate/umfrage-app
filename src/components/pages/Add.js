@@ -15,12 +15,13 @@ function Add() {
   return (
     <>
       <Card>
-        <Link to="/vote">Vote!</Link>
+        {/* <p className="cardTitle" /> */}
         <form className="add-inputs-form">
           <input type="text" className="input" placeholder="question one" />
           <input type="text" className="input" placeholder="question two" />
           <input type="text" className="input" placeholder=" next question" />
         </form>
+        <Link to="/vote">Vote!</Link>
       </Card>
     </>
   );
