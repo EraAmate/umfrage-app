@@ -1,0 +1,44 @@
+{
+  "polls": [
+    {
+      "id": 1,
+      "question": "What is the easiest language to learn??",
+      "answerOne": "English",
+      "answerTwo": "German",
+      "answerThree": "Japanese"
+    },
+    {
+      "id": 2,
+      "question": "Which programming language should I learn 2020?",
+      "answerOne": "JS",
+      "answerTwo": "Java",
+      "answerThree": "Python"
+    },
+    {
+      "id": 3,
+      "question": "What should we do on this weekend?",
+      "answerOne": "Play pocemon cards game",
+      "answerTwo": "Play digimon cards game",
+      "answerThree": "Play magic cards game"
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "question": "What should we do on this lalalalalal?",
+      "answerOne": "Play pocemon cards game",
+      "answerTwo": "Play digimon cards game",
+      "answerThree": "Play magic cards game",
+      "id": 8
+    }
+  ]
+}
