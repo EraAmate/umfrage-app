@@ -22,23 +22,18 @@
       "answerThree": "Play magic cards game"
     },
     {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
       "question": "What should we do on this lalalalalal?",
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
       "answerThree": "Play magic cards game",
       "id": 8
+    },
+    {
+      "question": "What is your favourites animal?",
+      "answerOne": "Dog",
+      "answerTwo": "Cat",
+      "answerThree": "Bird",
+      "id": 9
     }
   ]
 }
