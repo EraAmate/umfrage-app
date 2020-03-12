@@ -27,13 +27,17 @@ function Add() {
       answerThree: answerThree
     };
 
-    const response = await fetch("http://localhost:4000/polls", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(poll)
-    });
+    const response = await fetch(
+      process.env.REACT_APP_API_POLLS ||
+        `https://my-json-server.typicode.com/EraAmate/umfrage-app/polls`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(poll)
+      }
+    );
     const createdNewPoll = await response.json();
 
     alert(`New poll is created with the id ${createdNewPoll.id}`);
