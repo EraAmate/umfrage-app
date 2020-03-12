@@ -15,7 +15,7 @@ function Add() {
   return (
     <>
       <Card>
-        {/* <p className="cardTitle" /> */}
+        <p className="cardTitle">Write down your questions</p>
         <form className="add-inputs-form">
           <input type="text" className="input" placeholder="question one" />
           <input type="text" className="input" placeholder="question two" />

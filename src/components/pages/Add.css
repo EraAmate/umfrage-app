@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 .input {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 250px;
   border: none;
   border-bottom: 1px solid;
 }
-/* 
-.cardTitle{
 
-} */
+.cardTitle {
+  margin-top: 25px;
+  color: black;
+  text-decoration: underline;
+}
