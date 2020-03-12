@@ -1,0 +1,12 @@
+.add-inputs-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.input {
+  margin-top: 20px;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid;
+}

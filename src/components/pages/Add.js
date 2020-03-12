@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../Card";
+import "./Add.css";
 
 // function CardHeader (){
 // ////
@@ -15,10 +16,10 @@ function Add() {
     <>
       <Card>
         <Link to="/vote">Vote!</Link>
-        <form className="inputs-form">
-          <input type="input" placeholder="question one" />
-          <input type="input" placeholder="question two" />
-          <input type="input" placeholder=" next question" />
+        <form className="add-inputs-form">
+          <input type="text" className="input" placeholder="question one" />
+          <input type="text" className="input" placeholder="question two" />
+          <input type="text" className="input" placeholder=" next question" />
         </form>
       </Card>
     </>
