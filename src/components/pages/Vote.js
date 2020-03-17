@@ -86,7 +86,7 @@ function Vote() {
         </Label>
         <button className="btn">Vote</button>
       </Form>
-      <Link to="/result">Result!</Link>
+      <Link to="/polls/:pollId">Result!</Link>
     </Card>
   );
 }

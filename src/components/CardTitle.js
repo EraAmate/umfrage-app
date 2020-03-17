@@ -1,7 +1,8 @@
-import React from "react";
-import "./CardTitle.css";
+import styled from "@emotion/styled";
 
-function CardTitle(props) {
-  return <p className="cardTitle">{props.children}</p>;
-}
+const CardTitle = styled.p`
+  font-size: 23px;
+  color: black;
+`;
+
 export default CardTitle;

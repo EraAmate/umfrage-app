@@ -1,7 +1,15 @@
-import React from "react";
-import "./Footer.css";
+import styled from "@emotion/styled";
 
-function Footer() {
-  return <footer className="footer"></footer>;
-}
+const Footer = styled.footer`
+  z-index: -10;
+  bottom: 0;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.3;
+  text-align: center;
+  color: #34a854;
+`;
+
 export default Footer;

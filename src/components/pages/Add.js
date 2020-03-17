@@ -1,7 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../Card";
-import "./Add.css";
+import styled from "@emotion/styled";
+
+import CardTitle from "../CardTitle";
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+`;
+
+const Input = styled.input`
+  margin-top: 15px;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid;
+`;
+const Button = styled.button`
+  z-index: 10;
+  position: relative;
+  bottom: 0;
+  position: fixed;
+  font-size: 25px;
+  color: teal;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 200px;
+  background-color: none;
+`;
 
 function Add() {
   const [question, setQuestion] = React.useState("");
@@ -38,9 +68,9 @@ function Add() {
   return (
     <>
       <Card>
-        <p className="cardTitle">Write down your questions</p>
-        <form className="add-inputs-form" onSubmit={handleSubmit}>
-          <input
+        <CardTitle>Write down your questions</CardTitle>
+        <Form onSubmit={handleSubmit}>
+          <Input
             type="text"
             className="input"
             placeholder=" your question "
@@ -49,7 +79,7 @@ function Add() {
               setQuestion(event.target.value);
             }}
           />
-          <input
+          <Input
             type="text"
             className="input"
             placeholder="answer"
@@ -57,7 +87,7 @@ function Add() {
             onChange={event => setAnswerOne(event.target.value)}
           />
 
-          <input
+          <Input
             type="text"
             className="input"
             placeholder=" answer"
@@ -65,17 +95,17 @@ function Add() {
             onChange={event => setAnswerTwo(event.target.value)}
           />
 
-          <input
+          <Input
             type="text"
             className="input"
             placeholder="answer"
             value={answerThree}
             onChange={event => setAnswerThree(event.target.value)}
           />
-          <button className="btn">Submit</button>
-        </form>
+          <Button>Submit</Button>
+        </Form>
 
-        <Link to="/vote">Vote!</Link>
+        <Link to="/polls/:pollId/vote">Vote!</Link>
       </Card>
     </>
   );
