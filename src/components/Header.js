@@ -1,8 +1,17 @@
 import React from "react";
-import "./Header.css";
+import styled from "@emotion/styled";
+
+const H1 = styled.header`
+  margin-top: 0;
+  text-transform: uppercase;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  color: #34a854;
+`;
 
 function Header() {
-  return <h1 className="header">✐votapp</h1>;
+  return <H1>✐votapp</H1>;
 }
 
 export default Header;

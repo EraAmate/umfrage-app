@@ -1,11 +1,17 @@
 import React from "react";
-import "./App.css";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Add from "./components/pages/Add";
 import Vote from "./components/pages/Vote";
 import Result from "./components/pages/Result";
 import Footer from "./components/Footer";
+import styled from "@emotion/styled";
+
+const Main = styled.main`
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+`;
 
 function App() {
   return (
@@ -13,7 +19,7 @@ function App() {
       <Router>
         <Header />
 
-        <main className="main">
+        <Main>
           <Switch>
             <Route exact path="/">
               <Add />
@@ -21,11 +27,11 @@ function App() {
             <Route path="/vote">
               <Vote />
             </Route>
-            <Route path="/polls/pollId">
+            <Route path="/polls/:pollId">
               <Result />
             </Route>
           </Switch>
-        </main>
+        </Main>
         <Footer />
       </Router>
     </>
