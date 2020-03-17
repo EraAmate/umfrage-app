@@ -105,7 +105,7 @@ function Add() {
           <Button>Submit</Button>
         </Form>
 
-        <Link to="/vote">Vote!</Link>
+        <Link to="/polls/:pollId/vote">Vote!</Link>
       </Card>
     </>
   );
