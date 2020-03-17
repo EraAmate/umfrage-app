@@ -16,8 +16,18 @@ const Form = styled.form`
 const Input = styled.input`
   margin-top: 15px;
   width: 250px;
+`;
+const QuestionInput = styled(Input)`
+  background: #fff;
+  border: 2px solid #707070;
+  padding: 6px 10px;
+  font-weight: bold;
+`;
+const AnswerInput = styled(Input)`
+  background: none;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #707070;
+  padding: 6px 10px;
 `;
 const Button = styled.button`
   z-index: 10;
@@ -70,7 +80,7 @@ function Add() {
       <Card>
         <CardTitle>Write down your questions</CardTitle>
         <Form onSubmit={handleSubmit}>
-          <Input
+          <QuestionInput
             type="text"
             className="input"
             placeholder=" your question "
@@ -79,7 +89,7 @@ function Add() {
               setQuestion(event.target.value);
             }}
           />
-          <Input
+          <AnswerInput
             type="text"
             className="input"
             placeholder="answer"
@@ -87,7 +97,7 @@ function Add() {
             onChange={event => setAnswerOne(event.target.value)}
           />
 
-          <Input
+          <AnswerInput
             type="text"
             className="input"
             placeholder=" answer"
@@ -95,7 +105,7 @@ function Add() {
             onChange={event => setAnswerTwo(event.target.value)}
           />
 
-          <Input
+          <AnswerInput
             type="text"
             className="input"
             placeholder="answer"
