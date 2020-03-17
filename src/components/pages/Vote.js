@@ -3,13 +3,8 @@ import { Link } from "react-router-dom";
 import Card from "../Card";
 import { useParams, useHistory } from "react-router-dom";
 import styled from "@emotion/styled";
-// import Form from "../components/Form";
-
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+import Button from "../Button";
+import Form from "../Form";
 
 const Label = styled.label`
   display: block;
@@ -84,7 +79,7 @@ function Vote() {
           />
           {poll?.answerThree}
         </Label>
-        <button className="btn">Vote</button>
+        <Button>Vote</Button>
       </Form>
       <Link to="/polls/:pollId">Result!</Link>
     </Card>

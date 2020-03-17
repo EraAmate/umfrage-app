@@ -5,35 +5,40 @@
       "question": "What is the easiest language to learn??",
       "answerOne": "English",
       "answerTwo": "German",
-      "answerThree": "Japanese"
+      "answerThree": "Japanese",
+      "votes": ["answerOne", "answerTwo", "answerTwo", "answerTwo"]
     },
     {
       "id": 2,
       "question": "Which programming language should I learn 2020?",
       "answerOne": "JS",
       "answerTwo": "Java",
-      "answerThree": "Python"
+      "answerThree": "Python",
+      "votes": []
     },
     {
       "id": 3,
       "question": "What should we do on this weekend?",
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
-      "answerThree": "Play magic cards game"
+      "answerThree": "Play magic cards game",
+      "votes": []
     },
     {
+      "id": 8,
       "question": "What should we do on this lalalalalal?",
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
       "answerThree": "Play magic cards game",
-      "id": 8
+      "votes": []
     },
     {
+      "id": 9,
       "question": "What is your favourites animal?",
       "answerOne": "Dog",
       "answerTwo": "Cat",
       "answerThree": "Bird",
-      "id": 9
+      "votes": []
     }
   ]
 }
