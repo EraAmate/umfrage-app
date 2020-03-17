@@ -1,17 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import Form from "../Form";
 import Card from "../Card";
 import styled from "@emotion/styled";
 
 import CardTitle from "../CardTitle";
-
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
-`;
+import Button from "../Button";
 
 const Input = styled.input`
   margin-top: 15px;
@@ -29,19 +24,6 @@ const AnswerInput = styled(Input)`
   border-bottom: 1px solid #707070;
   padding: 6px 10px;
 `;
-const Button = styled.button`
-  z-index: 10;
-  position: relative;
-  bottom: 0;
-  position: fixed;
-  font-size: 25px;
-  color: teal;
-  cursor: pointer;
-  border: none;
-  height: 40px;
-  width: 200px;
-  background-color: none;
-`;
 
 function Add() {
   const [question, setQuestion] = React.useState("");
@@ -56,7 +38,8 @@ function Add() {
       question: question,
       answerOne: answerOne,
       answerTwo: answerTwo,
-      answerThree: answerThree
+      answerThree: answerThree,
+      votes: []
     };
 
     const response = await fetch(
