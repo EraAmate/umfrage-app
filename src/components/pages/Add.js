@@ -3,14 +3,6 @@ import { Link } from "react-router-dom";
 import Card from "../Card";
 import "./Add.css";
 
-// function CardHeader (){
-// ////
-// }
-
-// function Input () {
-//   return <input> </input>
-// }
-
 function Add() {
   const [question, setQuestion] = React.useState("");
   const [answerOne, setAnswerOne] = React.useState("");
