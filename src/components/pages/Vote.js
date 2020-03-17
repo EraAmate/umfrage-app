@@ -2,13 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../Card";
 import { useParams, useHistory } from "react-router-dom";
-import styled from "@emotion/styled";
 import Button from "../Button";
 import Form from "../Form";
-
-const Label = styled.label`
-  display: block;
-`;
+import RadioInput from "../RadioInput";
 
 const POLLS_API_URL =
   process.env.REACT_APP_API_POLLS ||
@@ -45,40 +41,23 @@ function Vote() {
     });
     history.push(`/polls/${poll.id}`);
   }
+
+  const options = ["answerOne", "answerTwo", "answerThree"];
+
   return (
     <Card>
       <Form onSubmit={handleSubmit}>
         <h2>{poll?.question}</h2>
-        <Label>
-          <input
-            type="radio"
-            name="answer"
-            value="answerOne"
-            checked={answer === "answerOne"}
+        {options.map(option => (
+          <RadioInput
+            key={option}
+            checked={answer === option}
             onChange={event => setAnswer(event.target.value)}
-          />
-          {poll?.answerOne}
-        </Label>
-        <Label>
-          <input
-            type="radio"
+            value={option}
+            label={poll?.[option]}
             name="answer"
-            value="answerTwo"
-            checked={answer === "answerTwo"}
-            onChange={event => setAnswer(event.target.value)}
           />
-          {poll?.answerTwo}
-        </Label>
-        <Label>
-          <input
-            type="radio"
-            name="answer"
-            value="answerThree"
-            checked={answer === "answerThree"}
-            onChange={event => setAnswer(event.target.value)}
-          />
-          {poll?.answerThree}
-        </Label>
+        ))}
         <Button>Vote</Button>
       </Form>
       <Link to="/polls/:pollId">Result!</Link>

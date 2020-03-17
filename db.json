@@ -30,7 +30,7 @@
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
       "answerThree": "Play magic cards game",
-      "votes": []
+      "votes": ["answerOne", "answerTwo", "answerTwo", "answerThree"]
     },
     {
       "id": 9,
