@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const Card = styled.div`
   margin-top: 50px;
   text-align: center;
-  background-color: ivory;
+  background-color: ${props => props.theme.colors.bgCard};
   opacity: 0.4;
   border-radius: 15px;
   height: 300px;
