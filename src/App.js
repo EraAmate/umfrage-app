@@ -7,7 +7,8 @@ import Result from "./components/pages/Result";
 import Footer from "./components/Footer";
 import styled from "@emotion/styled";
 import { ThemeProvider } from "emotion-theming";
-import nature from "./components/themes/nature";
+// import nature from "./components/themes/nature";
+import darkSide from "./components/themes/";
 
 import GlobalStyles from "./GlobalStyles";
 
@@ -20,7 +21,7 @@ const Main = styled.main`
 function App() {
   return (
     <>
-      <ThemeProvider theme={nature}>
+      <ThemeProvider theme={darkSide}>
         <Router>
           <GlobalStyles />
           <Header />
