@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import Form from "../Form";
 import Card from "../Card";
@@ -26,6 +27,8 @@ const AnswerInput = styled(Input)`
 `;
 
 function Add() {
+  const history = useHistory();
+
   const [question, setQuestion] = React.useState("");
   const [answerOne, setAnswerOne] = React.useState("");
   const [answerTwo, setAnswerTwo] = React.useState("");
@@ -55,7 +58,7 @@ function Add() {
     );
     const createdNewPoll = await response.json();
 
-    alert(`New poll is created with the id ${createdNewPoll.id}`);
+    history.push(`polls/${createdNewPoll.id}/vote/`);
   }
 
   return (
