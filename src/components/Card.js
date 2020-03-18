@@ -4,6 +4,7 @@ const Card = styled.div`
   margin-top: 50px;
   text-align: center;
   background-color: ${props => props.theme.colors.bgCard};
+  color: ${props => props.theme.colors.textPrimary};
   opacity: 0.4;
   border-radius: 15px;
   height: 300px;

@@ -51,31 +51,14 @@
       "votes": []
     },
     {
-      "question": "dc",
-      "answerOne": "dc",
-      "answerTwo": "dsc",
-      "answerThree": "cd",
-      "votes": [],
-      "id": 10
-    },
-    {
-      "question": "Whatcnhidcc",
-      "answerOne": "sdc c",
-      "answerTwo": "csdc",
-      "answerThree": "fdscdfsc",
-      "votes": [],
-      "id": 11
-    },
-    {
-      "question": "ewasdvcy a",
-      "answerOne": "wecsd",
-      "answerTwo": "efsdc",
-      "answerThree": "aedsc",
+      "question": "",
+      "answerOne": "",
+      "answerTwo": "",
+      "answerThree": "",
       "votes": [
-        null,
         null
       ],
-      "id": 12
+      "id": 10
     },
     {
       "question": "",
@@ -85,7 +68,18 @@
       "votes": [
         null
       ],
-      "id": 13
+      "id": 11
+    },
+    {
+      "question": "fdvc  ",
+      "answerOne": "vycx",
+      "answerTwo": "ydcx",
+      "answerThree": "ydcx ",
+      "votes": [
+        null,
+        "answerOne"
+      ],
+      "id": 12
     }
   ]
 }

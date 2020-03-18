@@ -62,7 +62,7 @@ function Add() {
   return (
     <>
       <Card>
-        <CardTitle>Write down your questions</CardTitle>
+        <CardTitle>Write down your question</CardTitle>
         <Form onSubmit={handleSubmit}>
           <QuestionInput
             type="text"
