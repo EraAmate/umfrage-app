@@ -9,7 +9,7 @@ const Footer = styled.footer`
   background-color: white;
   opacity: 0.3;
   text-align: center;
-  color: #34a854;
+  color: ${props => props.theme.colors.textPrimary};
 `;
 
 export default Footer;

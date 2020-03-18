@@ -2,10 +2,10 @@ const darkSide = {
   colors: {
     bgPrimary: `linear-gradient(
             to right top,
-            315deg, #000000 0%, #414141 74%
+             #28313B, #485461
           )`,
     bgCard: "#F4f4f4",
-    textPrimary: "white",
+    textPrimary: "#C10136",
     inputPrimary: "#fff",
     btnPrimary: "#1A0BAB"
   }

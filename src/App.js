@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Add from "./components/pages/Add";
@@ -7,8 +7,8 @@ import Result from "./components/pages/Result";
 import Footer from "./components/Footer";
 import styled from "@emotion/styled";
 import { ThemeProvider } from "emotion-theming";
-// import nature from "./components/themes/nature";
-import darkSide from "./components/themes/";
+import nature from "./components/themes/nature";
+import darkSide from "./components/themes/darkSide";
 
 import GlobalStyles from "./GlobalStyles";
 
@@ -19,12 +19,23 @@ const Main = styled.main`
 `;
 
 function App() {
+  const [theme, setTheme] = useState(darkSide);
+
   return (
     <>
-      <ThemeProvider theme={darkSide}>
+      <ThemeProvider theme={theme}>
         <Router>
           <GlobalStyles />
-          <Header />
+          <Header
+            onSwitchColorButtonClick={() => {
+              // if (theme === darkSide) {
+              //   setTheme(nature);
+              // } else {
+              //   setTheme(darkSide);
+              // }
+              setTheme(theme === darkSide ? nature : darkSide);
+            }}
+          />
 
           <Main>
             <Switch>

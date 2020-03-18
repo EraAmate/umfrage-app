@@ -6,7 +6,7 @@ const Button = styled.button`
   bottom: 0;
   position: fixed;
   font-size: 25px;
-  color: ${props => props.theme.colors.btnPrimary};
+  color: ${props => props.theme.colors.textPrimary};
   cursor: pointer;
   border: none;
   height: 40px;
