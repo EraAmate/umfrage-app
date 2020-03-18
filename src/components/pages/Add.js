@@ -4,9 +4,13 @@ import { useHistory } from "react-router-dom";
 import Form from "../Form";
 import Card from "../Card";
 import styled from "@emotion/styled";
-
 import CardTitle from "../CardTitle";
 import Button from "../Button";
+
+const Container = styled.div({
+  background: "whitesmoke",
+  height: "100vh"
+});
 
 const Input = styled.input`
   margin-top: 15px;
@@ -65,15 +69,17 @@ function Add() {
       <Card>
         <CardTitle>Write down your questions</CardTitle>
         <Form onSubmit={handleSubmit}>
-          <QuestionInput
-            type="text"
-            className="input"
-            placeholder=" your question "
-            value={question}
-            onChange={event => {
-              setQuestion(event.target.value);
-            }}
-          />
+          <Container>
+            <QuestionInput
+              type="text"
+              className="input"
+              placeholder=" your question "
+              value={question}
+              onChange={event => {
+                setQuestion(event.target.value);
+              }}
+            />
+          </Container>
           <AnswerInput
             type="text"
             className="input"
@@ -81,7 +87,6 @@ function Add() {
             value={answerOne}
             onChange={event => setAnswerOne(event.target.value)}
           />
-
           <AnswerInput
             type="text"
             className="input"
@@ -89,7 +94,6 @@ function Add() {
             value={answerTwo}
             onChange={event => setAnswerTwo(event.target.value)}
           />
-
           <AnswerInput
             type="text"
             className="input"

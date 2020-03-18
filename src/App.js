@@ -6,6 +6,9 @@ import Vote from "./components/pages/Vote";
 import Result from "./components/pages/Result";
 import Footer from "./components/Footer";
 import styled from "@emotion/styled";
+import { ThemeProvider } from "emotion-theming";
+import nature from "./components/themes/nature";
+
 import GlobalStyles from "./GlobalStyles";
 
 const Main = styled.main`
@@ -17,25 +20,27 @@ const Main = styled.main`
 function App() {
   return (
     <>
-      <Router>
-        <GlobalStyles />
-        <Header />
+      <ThemeProvider theme={nature}>
+        <Router>
+          <GlobalStyles />
+          <Header />
 
-        <Main>
-          <Switch>
-            <Route exact path="/">
-              <Add />
-            </Route>
-            <Route path="/polls/:pollId/vote">
-              <Vote />
-            </Route>
-            <Route path="/polls/:pollId">
-              <Result />
-            </Route>
-          </Switch>
-        </Main>
-        <Footer />
-      </Router>
+          <Main>
+            <Switch>
+              <Route exact path="/">
+                <Add />
+              </Route>
+              <Route path="/polls/:pollId/vote">
+                <Vote />
+              </Route>
+              <Route path="/polls/:pollId">
+                <Result />
+              </Route>
+            </Switch>
+          </Main>
+          <Footer />
+        </Router>
+      </ThemeProvider>
     </>
   );
 }
