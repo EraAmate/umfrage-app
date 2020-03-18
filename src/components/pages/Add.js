@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 import Form from "../Form";
@@ -100,8 +99,6 @@ function Add() {
           />
           <Button>Submit</Button>
         </Form>
-
-        <Link to="/polls/:pollId/vote">Vote!</Link>
       </Card>
     </>
   );
