@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Card from "../Card";
 import { useParams } from "react-router-dom";
 
@@ -42,7 +41,6 @@ function Result() {
       <div>
         {poll?.answerThree} ({answerThreeVotes} votes)
       </div>
-      <Link to="/">Add!</Link>
     </Card>
   );
 }
