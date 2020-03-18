@@ -7,17 +7,12 @@ import styled from "@emotion/styled";
 import CardTitle from "../CardTitle";
 import Button from "../Button";
 
-const Container = styled.div({
-  background: "whitesmoke",
-  height: "100vh"
-});
-
 const Input = styled.input`
   margin-top: 15px;
   width: 250px;
 `;
 const QuestionInput = styled(Input)`
-  background: #fff;
+  background: ${props => props.theme.colors.inputPrimary};
   border: 2px solid #707070;
   padding: 6px 10px;
   font-weight: bold;
@@ -61,7 +56,7 @@ function Add() {
     );
     const createdNewPoll = await response.json();
 
-    history.push(`polls/${createdNewPoll.id}/vote/`);
+    history.push(`/polls/${createdNewPoll.id}/vote/`);
   }
 
   return (
@@ -69,17 +64,15 @@ function Add() {
       <Card>
         <CardTitle>Write down your questions</CardTitle>
         <Form onSubmit={handleSubmit}>
-          <Container>
-            <QuestionInput
-              type="text"
-              className="input"
-              placeholder=" your question "
-              value={question}
-              onChange={event => {
-                setQuestion(event.target.value);
-              }}
-            />
-          </Container>
+          <QuestionInput
+            type="text"
+            className="input"
+            placeholder=" your question "
+            value={question}
+            onChange={event => {
+              setQuestion(event.target.value);
+            }}
+          />
           <AnswerInput
             type="text"
             className="input"

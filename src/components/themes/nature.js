@@ -9,7 +9,9 @@ const nature = {
             #a7d73b
           )`,
     bgCard: "ivory",
-    textPrimary: "black"
+    textPrimary: "black",
+    inputPrimary: "#fff",
+    btnPrimary: "teal"
   }
 };
 
