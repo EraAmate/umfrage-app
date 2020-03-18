@@ -6,6 +6,7 @@ import Vote from "./components/pages/Vote";
 import Result from "./components/pages/Result";
 import Footer from "./components/Footer";
 import styled from "@emotion/styled";
+import GlobalStyles from "./GlobalStyles";
 
 const Main = styled.main`
   display: flex;
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Router>
+        <GlobalStyles />
         <Header />
 
         <Main>
