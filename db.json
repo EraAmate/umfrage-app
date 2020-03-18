@@ -6,7 +6,12 @@
       "answerOne": "English",
       "answerTwo": "German",
       "answerThree": "Japanese",
-      "votes": ["answerOne", "answerTwo", "answerTwo", "answerTwo"]
+      "votes": [
+        "answerOne",
+        "answerTwo",
+        "answerTwo",
+        "answerTwo"
+      ]
     },
     {
       "id": 2,
@@ -30,7 +35,12 @@
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
       "answerThree": "Play magic cards game",
-      "votes": ["answerOne", "answerTwo", "answerTwo", "answerThree"]
+      "votes": [
+        "answerOne",
+        "answerTwo",
+        "answerTwo",
+        "answerThree"
+      ]
     },
     {
       "id": 9,
@@ -39,6 +49,43 @@
       "answerTwo": "Cat",
       "answerThree": "Bird",
       "votes": []
+    },
+    {
+      "question": "dc",
+      "answerOne": "dc",
+      "answerTwo": "dsc",
+      "answerThree": "cd",
+      "votes": [],
+      "id": 10
+    },
+    {
+      "question": "Whatcnhidcc",
+      "answerOne": "sdc c",
+      "answerTwo": "csdc",
+      "answerThree": "fdscdfsc",
+      "votes": [],
+      "id": 11
+    },
+    {
+      "question": "ewasdvcy a",
+      "answerOne": "wecsd",
+      "answerTwo": "efsdc",
+      "answerThree": "aedsc",
+      "votes": [
+        null,
+        null
+      ],
+      "id": 12
+    },
+    {
+      "question": "",
+      "answerOne": "",
+      "answerTwo": "",
+      "answerThree": "",
+      "votes": [
+        null
+      ],
+      "id": 13
     }
   ]
 }

@@ -7,11 +7,24 @@ const H1 = styled.header`
   height: auto;
   background-color: white;
   text-align: center;
-  color: #34a854;
+  color: ${props => props.theme.colors.textPrimary};
 `;
-
-function Header() {
-  return <H1>✐votapp</H1>;
+const SwitchColorButton = styled.button`
+  border: 1px solid white;
+  background: none;
+  font-size: 25px;
+`;
+function Header({ onSwitchColorButtonClick }) {
+  return (
+    <>
+      <H1>✐votapp</H1>
+      <SwitchColorButton onClick={onSwitchColorButtonClick}>
+        <span role="img" aria-label="SwitchTheme">
+          💡
+        </span>
+      </SwitchColorButton>
+    </>
+  );
 }
 
 export default Header;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Card from "../Card";
 import { useParams, useHistory } from "react-router-dom";
 import Button from "../Button";
@@ -60,7 +59,6 @@ function Vote() {
         ))}
         <Button>Vote</Button>
       </Form>
-      <Link to="/polls/:pollId">Result!</Link>
     </Card>
   );
 }

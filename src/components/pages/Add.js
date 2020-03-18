@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 import Form from "../Form";
 import Card from "../Card";
 import styled from "@emotion/styled";
-
 import CardTitle from "../CardTitle";
 import Button from "../Button";
 
@@ -14,7 +12,7 @@ const Input = styled.input`
   width: 250px;
 `;
 const QuestionInput = styled(Input)`
-  background: #fff;
+  background: ${props => props.theme.colors.inputPrimary};
   border: 2px solid #707070;
   padding: 6px 10px;
   font-weight: bold;
@@ -58,7 +56,7 @@ function Add() {
     );
     const createdNewPoll = await response.json();
 
-    history.push(`polls/${createdNewPoll.id}/vote/`);
+    history.push(`/polls/${createdNewPoll.id}/vote/`);
   }
 
   return (
@@ -82,7 +80,6 @@ function Add() {
             value={answerOne}
             onChange={event => setAnswerOne(event.target.value)}
           />
-
           <AnswerInput
             type="text"
             className="input"
@@ -90,7 +87,6 @@ function Add() {
             value={answerTwo}
             onChange={event => setAnswerTwo(event.target.value)}
           />
-
           <AnswerInput
             type="text"
             className="input"
@@ -100,8 +96,6 @@ function Add() {
           />
           <Button>Submit</Button>
         </Form>
-
-        <Link to="/polls/:pollId/vote">Vote!</Link>
       </Card>
     </>
   );
