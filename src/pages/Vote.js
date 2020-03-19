@@ -38,7 +38,8 @@ function Vote() {
     history.push(`/polls/${poll.id}`);
   }
   if (isLoadingGetPoll) {
-    return <span className="ld ld-ring ld-spin"></span>;
+    // return <span className="ld ld-ring ld-spin"></span>;
+    return <img src="../assets/Nyama.svg" alt="Just loading item" />;
   }
 
   const options = ["answerOne", "answerTwo", "answerThree"];
