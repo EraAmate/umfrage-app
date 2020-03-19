@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import Form from "../components/Form";
 import RadioInput from "../components/RadioInput";
 import { patchPoll, getPoll } from "../api/polls";
+import Loading from "../components/Loading";
 
 function Vote() {
   const { pollId } = useParams();
@@ -39,7 +40,7 @@ function Vote() {
   }
   if (isLoadingGetPoll) {
     // return <span className="ld ld-ring ld-spin"></span>;
-    return <img src="../assets/Nyama.svg" alt="Just loading item" />;
+    return <Loading />;
   }
 
   const options = ["answerOne", "answerTwo", "answerThree"];
