@@ -6,12 +6,7 @@
       "answerOne": "English",
       "answerTwo": "German",
       "answerThree": "Japanese",
-      "votes": [
-        "answerOne",
-        "answerTwo",
-        "answerTwo",
-        "answerTwo"
-      ]
+      "votes": ["answerOne", "answerTwo", "answerTwo", "answerTwo"]
     },
     {
       "id": 2,
@@ -35,12 +30,7 @@
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
       "answerThree": "Play magic cards game",
-      "votes": [
-        "answerOne",
-        "answerTwo",
-        "answerTwo",
-        "answerThree"
-      ]
+      "votes": ["answerOne", "answerTwo", "answerTwo", "answerThree"]
     },
     {
       "id": 9,
@@ -55,41 +45,8 @@
       "answerOne": "",
       "answerTwo": "",
       "answerThree": "",
-      "votes": [
-        null
-      ],
+      "votes": [null],
       "id": 10
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        null
-      ],
-      "id": 11
-    },
-    {
-      "question": "fdvc  ",
-      "answerOne": "vycx",
-      "answerTwo": "ydcx",
-      "answerThree": "ydcx ",
-      "votes": [
-        null,
-        "answerOne"
-      ],
-      "id": 12
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        "answerThree"
-      ],
-      "id": 13
     }
   ]
 }

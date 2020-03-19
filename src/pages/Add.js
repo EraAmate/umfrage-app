@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+// import Nyama from "../assets/Nyama.svg";
 
 import Form from "../components/Form";
 import Card from "../components/Card";
@@ -32,19 +33,23 @@ function Add() {
   const [answerOne, setAnswerOne] = React.useState("");
   const [answerTwo, setAnswerTwo] = React.useState("");
   const [answerThree, setAnswerThree] = React.useState("");
+  const [Loading, setLoading] = React.useState(false);
 
   async function handleSubmit(event) {
     event.preventDefault();
+    setLoading(true);
+    setTimeout(async () => {
+      const poll = {
+        question: question,
+        answerOne: answerOne,
+        answerTwo: answerTwo,
+        answerThree: answerThree,
+        votes: []
+      };
 
-    const poll = {
-      question: question,
-      answerOne: answerOne,
-      answerTwo: answerTwo,
-      answerThree: answerThree,
-      votes: []
-    };
-    const createdPoll = await postPoll(poll);
-    history.push(`/polls/${createdPoll.id}/vote`);
+      const createdPoll = await postPoll(poll);
+      history.push(`/polls/${createdPoll.id}/vote`);
+    }, 3000);
   }
 
   return (
@@ -82,7 +87,7 @@ function Add() {
             value={answerThree}
             onChange={event => setAnswerThree(event.target.value)}
           />
-          <Button>Submit</Button>
+          <Button disabled={Loading}>Submit</Button>
         </Form>
       </Card>
     </>
