@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Add from "./components/pages/Add";
-import Vote from "./components/pages/Vote";
-import Result from "./components/pages/Result";
+import Add from "./pages/Add";
+import Vote from "./pages/Vote";
+import Result from "./pages/Result";
 import Footer from "./components/Footer";
 import styled from "@emotion/styled";
 import { ThemeProvider } from "emotion-theming";
-import nature from "./components/themes/nature";
-import darkSide from "./components/themes/darkSide";
+import nature from "./themes/nature";
+import darkSide from "./themes/darkSide";
 
 import GlobalStyles from "./GlobalStyles";
 
