@@ -1,11 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-import Form from "../Form";
-import Card from "../Card";
+import Form from "../components/Form";
+import Card from "../components/Card";
 import styled from "@emotion/styled";
-import CardTitle from "../CardTitle";
-import Button from "../Button";
+import CardTitle from "../components/CardTitle";
+import Button from "../components/Button";
+import { postPoll } from "../api/polls";
 
 const Input = styled.input`
   margin-top: 15px;
@@ -42,21 +43,8 @@ function Add() {
       answerThree: answerThree,
       votes: []
     };
-
-    const response = await fetch(
-      process.env.REACT_APP_API_POLLS ||
-        `https://my-json-server.typicode.com/EraAmate/umfrage-app/polls`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(poll)
-      }
-    );
-    const createdNewPoll = await response.json();
-
-    history.push(`/polls/${createdNewPoll.id}/vote/`);
+    const createdPoll = await postPoll(poll);
+    history.push(`/polls/${createdPoll.id}/vote`);
   }
 
   return (
