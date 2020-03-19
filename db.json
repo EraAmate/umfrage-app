@@ -6,12 +6,7 @@
       "answerOne": "English",
       "answerTwo": "German",
       "answerThree": "Japanese",
-      "votes": [
-        "answerOne",
-        "answerTwo",
-        "answerTwo",
-        "answerTwo"
-      ]
+      "votes": ["answerOne", "answerTwo", "answerTwo", "answerTwo"]
     },
     {
       "id": 2,
@@ -35,12 +30,7 @@
       "answerOne": "Play pocemon cards game",
       "answerTwo": "Play digimon cards game",
       "answerThree": "Play magic cards game",
-      "votes": [
-        "answerOne",
-        "answerTwo",
-        "answerTwo",
-        "answerThree"
-      ]
+      "votes": ["answerOne", "answerTwo", "answerTwo", "answerThree"]
     },
     {
       "id": 9,
@@ -55,212 +45,8 @@
       "answerOne": "",
       "answerTwo": "",
       "answerThree": "",
-      "votes": [
-        null
-      ],
+      "votes": [null],
       "id": 10
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        null
-      ],
-      "id": 11
-    },
-    {
-      "question": "fdvc  ",
-      "answerOne": "vycx",
-      "answerTwo": "ydcx",
-      "answerThree": "ydcx ",
-      "votes": [
-        null,
-        "answerOne"
-      ],
-      "id": 12
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        "answerThree"
-      ],
-      "id": 13
-    },
-    {
-      "question": "asdc",
-      "answerOne": "dsv",
-      "answerTwo": "vf",
-      "answerThree": "dbvx",
-      "votes": [],
-      "id": 14
-    },
-    {
-      "question": "ffe",
-      "answerOne": "dfe",
-      "answerTwo": "wdfvvc",
-      "answerThree": "fvsdf",
-      "votes": [],
-      "id": 15
-    },
-    {
-      "question": "dfv",
-      "answerOne": "f",
-      "answerTwo": "gfsd",
-      "answerThree": "bb",
-      "votes": [],
-      "id": 16
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 17
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 18
-    },
-    {
-      "question": "werfgsdv",
-      "answerOne": "grefsd",
-      "answerTwo": "rfd",
-      "answerThree": "grfd",
-      "votes": [
-        "answerTwo",
-        "answerThree",
-        "answerThree",
-        "answerThree"
-      ],
-      "id": 19
-    },
-    {
-      "question": "cefd",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 20
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 21
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 22
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 23
-    },
-    {
-      "question": "wtrefvdctgfrc",
-      "answerOne": "gfvc",
-      "answerTwo": "tres",
-      "answerThree": "bvc",
-      "votes": [],
-      "id": 24
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 25
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 26
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "id": 27
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        null
-      ],
-      "id": 28
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        null,
-        null
-      ],
-      "id": 29
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [
-        null
-      ],
-      "id": 30
-    },
-    {
-      "question": "sfdvhcrfvc",
-      "answerOne": "fv",
-      "answerTwo": "fdv",
-      "answerThree": "sfdv",
-      "votes": [
-        null
-      ],
-      "id": 31
-    },
-    {
-      "question": "",
-      "answerOne": "",
-      "answerTwo": "",
-      "answerThree": "",
-      "votes": [],
-      "id": 32
     }
   ]
 }
