@@ -38,7 +38,7 @@ function Vote() {
     history.push(`/polls/${poll.id}`);
   }
   if (isLoadingGetPoll) {
-    return <p>Loading...</p>;
+    return <span className="ld ld-ring ld-spin"></span>;
   }
 
   const options = ["answerOne", "answerTwo", "answerThree"];
